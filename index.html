@@ -30,22 +30,22 @@
     <!--button-->
     <section>
       <div class="calculator-buttons">
-        <button class="calc-button is-clear">C</button>
-        <button class="calc-button">%</button>
+        <button class="calc-button is-clear" type="reset">C</button>
+        <button class="calc-button" id ="division"onclick="changeOperation(this.id)">%</button>
         <button class="calc-button">7</button>
         <button class="calc-button">8</button>
         <button class="calc-button">9</button>
-        <button class="calc-button">*</button>
+        <button class="calc-button" id ="multiplication"onclick="changeOperation(this.id)">*</button>
         <button class="calc-button">4</button>
         <button class="calc-button">5</button>
         <button class="calc-button">6</button>
-        <button class="calc-button">-</button>
+        <button class="calc-button" id="subtraction" onclick="changeOperation(this.id)">-</button>
         <button class="calc-button">1</button>
         <button class="calc-button">2</button>
         <button class="calc-button">3</button>
-        <button class="calc-button">+</button>
+        <button class="calc-button" id ="addition"onclick="changeOperation(this.id)">+</button>
         <button class="calc-button is-zero">0</button>
-        <button class="calc-button is-equal">=</button>
+        <button class="calc-button is-equal" onclick="equals()">=</button>
       </div>
     </section>
   </div>
