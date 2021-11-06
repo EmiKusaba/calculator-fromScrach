@@ -25,14 +25,18 @@ const multiply = (numA, numB) => {
   return value
 }
 
-const devide = (numA, numB) => {
+const divide = (numA, numB) => {
   const value = numA / numB
   return value
 }
 
-const modulus = (numA, numB) =>{
-  const value = numA % numB
-  // console.log("modulus")
-  return value
+// const modulus = (numA, numB) =>{
+//   const value = numA % numB
+//   // console.log("modulus")
+//   return value
+// }
+const changeOperation(chosenOperation) => {
+  operation = chosenOperation
+  console.log("operation")
+  return changeOperation
 }
-
