@@ -35,8 +35,25 @@ const divide = (numA, numB) => {
 //   // console.log("modulus")
 //   return value
 // }
-const changeOperation(chosenOperation) => {
+const changeOperation = (chosenOperation) => {
   operation = chosenOperation
   console.log("operation")
   return changeOperation
+}
+const putResultElement = (operationResult) => {
+  document.getElementById("result") =  operationResult
+}
+
+const equals = () => {
+  switch (operation) {
+    case "addition":  putResultInElement(add(firstNum, secondNum)) 
+    break;
+    case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
+    break;
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
+    break;
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
+    break;
+    default: "Choose an operation"
+  }
 }
