@@ -4,10 +4,12 @@ let resultNum = null ;
 
 const saveFirstNumber = (num) => {
   firstNum = parseInt(num)  
+  console.log(firstNum)
 }
 
 const saveSecondNumber = (num) => {
   secondNum = parseInt(num)  
+  console.log(secondNum)
 }
 
 const add = (numA, numB) => {
@@ -37,11 +39,12 @@ const divide = (numA, numB) => {
 // }
 const changeOperation = (chosenOperation) => {
   operation = chosenOperation
-  console.log("operation")
-  return changeOperation
+  console.log(operation)
+  return operation
 }
-const putResultElement = (operationResult) => {
-  document.getElementById("result") =  operationResult
+const putResultInElement = (operationResult) => {
+  console.log(operationResult)
+  document.getElementById("result").value = operationResult
 }
 
 const equals = () => {
